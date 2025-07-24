@@ -100,4 +100,6 @@ from Customers
 
 -- 4.ข้อมูลของสินค้ารหัสประเภทที่ 1 ราคาไม่เกิน 50 หรือสินค้ารหัสประเภทที่ 8 ราคาไม่เกิน 75
 select * from Products
-where (ProductID = '1' 
+where (ProductID = '1' and UnitPrice <=50) or (ProductID = '8' and UnitPrice <=75)
+
+--5. ชื่อบริษัทลูกค้า ที่อยู่ใน ประเทศ USA ที่ไม่มีหมายเลข FAX  เรียงตามลำดับชื่อบริษัท 
